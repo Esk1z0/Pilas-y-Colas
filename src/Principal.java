@@ -1,7 +1,7 @@
 public class Principal {
     public static void main(String[] args) {
-        System.out.println("Practica ED Pilas y Colas de: " + "------Nombre y Apellidos del alumno---------");
-        System.out.println("Numero Matricula: " + "XXXXXXXXX");
+        System.out.println("Practica ED Pilas y Colas de: " + "------Juan Esteban Rincón Marín---------");
+        System.out.println("Numero Matricula: " + "bs0015");
         Principal pruebas = new Principal();
 
         Pila asignaturas = pruebas.prepararPila();
