@@ -30,12 +30,13 @@ public class Alumno {
         return numAsignaturas;
     }
     public void mostrarAlumno(){
-        System.out.println(this.nombre + ". Matr: " + this.matricula + " Media: (" + this.calificacionMedia + ")/nAsignaturas:/n");
+        System.out.println(this.nombre + ". Matr: " + this.matricula + " Media: (" + this.calificacionMedia + ")\nAsignaturas:");
         if (this.numAsignaturas == 0){
             System.out.println("No está matriculado en ninguna asignatura");
         }
         else {
             this.asignaturas.mostrar();
         }
+        System.out.print("\n");
     }
 }
