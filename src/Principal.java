@@ -13,19 +13,27 @@ public class Principal {
 
     public Pila prepararPila() {
         Pila asignaturas = new Pila();
- /*       Asignatura ffi = new Asignatura("Fundamentos Físicos de la Informática", 3.50);
+        Asignatura ffi = new Asignatura("Fundamentos Físicos de la Informática", 3.50);
         Asignatura ed = new Asignatura("Estructuras de Datos", 6.35);
         Asignatura aes = new Asignatura("Aspectos Éticos y Sociales", 7.70);
         Asignatura fs = new Asignatura("Fundamentos de seguridad", 6.75);
         asignaturas.apilar(ffi);
         asignaturas.apilar(ed);
         asignaturas.apilar(aes);
-        asignaturas.apilar(fs);*/
+        asignaturas.apilar(fs);
         return asignaturas;
     }
 
     public void pruebasPila(Pila asignaturas) {
-        //Completar
+        asignaturas.mostrar();
+        AlgoritmosPila algoritmo = new AlgoritmosPila();
+        double notaMinima = algoritmo.notaMinima(asignaturas);
+        System.out.println("Nota Mínima: " + notaMinima);
+        Asignatura asignaturaNotaMaxima = algoritmo.asignaturaNotaMaxima(asignaturas);
+        System.out.println("Asignatura con la Mejor nota: " + asignaturaNotaMaxima.getNombre());
+        System.out.println("Asignaturas Aprobadas: \n");
+        algoritmo.mostrarAprobadas(asignaturas);
+
     }
 
     public Cola prepararCola() {
